@@ -1731,6 +1731,7 @@ function renderResults(rawRows, data, uniqueCount, totalCounts) {
   // Stopword editor
   renderStopwords();
 
+  updateUsageUI();
   // Search
   document.getElementById('searchInput').addEventListener('input', function() {
     const q = this.value.trim().toLowerCase();

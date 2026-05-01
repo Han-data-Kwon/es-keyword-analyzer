@@ -1887,7 +1887,7 @@ async function runAIInsight() {
   const sampleTexts = rawSample.map((t, i) => `${i+1}. ${t}`).join('\n');
 
   // ── Render 백엔드 호출 ────────────────────────────────
-  const RENDER_URL = 'https://keyword-insight-api.onrender.com'; // ← 배포 후 실제 URL로 교체
+  const RENDER_URL = 'https://es-keyword-analyzer.onrender.com'; // ← 배포 후 실제 URL로 교체
 
   try {
     const response = await fetch(`${RENDER_URL}/keyword-insight`, {
